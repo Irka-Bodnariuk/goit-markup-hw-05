@@ -28,7 +28,7 @@
           >
           <ul class="header-list list">
             <li class="header-item">
-              <a href="./index.html" class="header-link link studio">Студия</a>
+              <a href="./index.html" class="header-link link current">Студия</a>
             </li>
 
             <li class="header-item">
@@ -72,7 +72,7 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="hero-button">Заказать услугу</button>
+          <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!-- Особенности компании -->
@@ -421,5 +421,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-button" data-modal-close>
+          <svg class="close-icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
