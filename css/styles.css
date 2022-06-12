@@ -13,8 +13,7 @@
   --tipical-padding: 94px;
   --border-color: 1px solid #eeeeee;
   --fill-icon: #afb1b8;
-  --transition-active: 2250ms cubic-bezier(0.4, 0, 0.2, 1);
-  --background-color-backdrop: rgba(0, 0, 0, 0.2);
+  --transition-active: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -539,7 +538,8 @@ p {
   border-radius: 4px;
   border: transparent;
   display: block;
-  transition: background-color var(--transition-active), color var(--transition-active);
+  transition: background-color var(--transition-active), color var(--transition-active),
+    box-shadow var(--transition-active);
 }
 
 .filter-button:hover,
@@ -564,6 +564,7 @@ p {
 }
 .portfolio-link {
   display: block;
+  transition: box-shadow var(--transition-active);
 }
 
 .portfolio-link:hover,
@@ -625,7 +626,7 @@ p {
 .backdrop {
   width: 100%;
   min-height: 100%;
-  background-color: var(--background-color-backdrop);
+  background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
   transition: opacity var(--transition-active), visibility var(--transition-active);
